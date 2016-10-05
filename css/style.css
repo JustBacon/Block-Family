@@ -3,8 +3,8 @@
 	height: 80px;
 	background-color: black;
 	color: white;
-	margin: 10px auto;
-	padding: 10px;
+	margin: 10px;
+	padding: 10px 0;
 }
 h3 {
 	text-align: center;
@@ -17,8 +17,29 @@ header {
 	font-size: 50px;
 	text-align: center;
 }
-@media only screen and (min-width : 900px) {
+/*Medium screen 600px to 1200px*/
+@media only screen and (min-width : 600px) and (max-width:1500px ) {
 	body {
 		background-color: blue;
 	} 
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+@media all and (min-width: 1px) and (max-width: 1000px){
+	.block{
+		float: left;
+		width: 20%;
+		display: inline-block;
+		margin-right: 25px;
+	}
 }
